@@ -4,3 +4,6 @@
 [submodule "projects/1st_project"]
 	path = projects/1st_project
 	url = https://github.com/hy-git-111/eliceproject_qa04.git
+[submodule "projects/2nd_project"]
+	path = projects/2nd_project
+	url = https://github.com/hy-git-111/eliceproject_qa_team03.git
