@@ -1,0 +1,106 @@
+[{
+    "email": "{{$randomEmail}}",
+    "password": "Test1234!",
+    "username": "남궁현우현",
+    "message": "You have successfully signed up",
+    "status": 201
+},
+{
+    "email": "David__J@example.com",
+    "password": "Test1234!",
+    "username": "David Jo",
+    "message": "You have successfully signed up",
+    "status": 201 
+},
+{
+    "email": "",
+    "password": "Test1234!",
+    "username": "{{$randomFullName}}",
+    "message": "All fields are required",
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "",
+    "username": "{{$randomFullName}}",
+    "message": "All fields are required",
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "Test1234!",
+    "username": "",
+    "message": "All fields are required",
+    "status": 400
+},
+{
+    "email" : "@example.com",
+    "password": "Test1234!",
+    "username": "{{$randomFullName}}",
+    "message": "Email is not formatted correctly",
+    "status": 400
+},
+{
+    "email" : "Gildong@.com",
+    "password": "Test1234!",
+    "username": "{{$randomFullName}}",
+    "message": "Email is not formatted correctly", 
+    "status": 400
+},
+{
+    "email" : "Gildong@example",
+    "password": "Test1234!",
+    "username": "{{$randomFullName}}",
+    "message": "Email is not formatted correctly",
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "&&Te%st",
+    "username": "{{$randomFullName}}",
+    "message": "Email is not formatted correctly", 
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "#||Test1234567890",
+    "username": "{{$randomFullName}}",
+    "message": "User data is not correctly",
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "Test1234567890",
+    "username": "{{$randomFullName}}",
+    "message": "User data is not correctly",
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "Test1234!",
+    "username": "=*남궁호~!=*",
+    "message": "User data is not correctly",
+    "status": 400
+},
+{
+    "email": "{{$randomEmail}}",
+    "password": "Test1234!",
+    "username": "남궁호12345",
+    "message": "User data is not correctly",
+    "status": 400
+},
+{
+    "email": "David__J@example.com",
+    "password": "Test1234!",
+    "username": "David Gang",
+    "message": "User already exists",
+    "status": 409
+},
+{
+    "email": "DavidJo@example.com",
+    "password": "Test1234!",
+    "username": "David Jo",
+    "message": "User already exists",
+    "status": 409
+}
+]
