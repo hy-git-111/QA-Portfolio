@@ -1,0 +1,1172 @@
+[
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속 \n2. 테스트에 사용할 고유 이메일: auto_signup_ok@example.com \n3. 테스트에 사용할 고유 사용자명: auto_signup_ok_user\"\n\n재현 절차:\n1. 사용자명 필드에 auto_signup_ok_user 입력  \n2. 이메일 필드에 auto_signup_ok@example.com 입력 \n3. 비밀번호 필드에 P@sswOrd123! 입력 \n4. 'Sign up' 버튼 클릭  \n5. DOM 변화 확인: 네비게이션 바, URL\"\n기대 결과:\n1. 홈 페이지 (/)로 리디렉션 \n(URL 확인: BASE_URL/)  \n2. 네비게이션 바에 auto_signup_ok_user 사용자명 표시 \n(DOM 요소 텍스트 확인) \n3. 네비게이션 바에 \"\"New Post\"\", \"\"Settings\"\", auto_signup_ok_user 링크 표시, \"\"Sign in\"\", \"\"Sign up\"\" 링크 숨김 (DOM 요소 존재/비존재 확인)\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 이메일 필드에 empty_username@example.com 입력  \n2. 비밀번호 필드에 P@sswOrd123! 입력  \n3. 'Sign up' 버튼 클릭  \n4. DOM 변화 확인: 에러 메시지 영역\n기대 결과:\n1. \"\"username can't be blank\"\" 에러 메시지가 사용자명 필드 근처 또는 공통 에러 영역에 표시\n (DOM 요소 텍스트 확인)  \n2. 페이지 URL 변경 없음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 필드에 empty_email_user 입력  \n2. 비밀번호 필드에 P@sswOrd123! 입력  \n3. 'Sign up' 버튼 클릭  \n4. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"email can't be blank\"\" 에러 메시지가 이메일 필드 근처 또는 공통 에러 영역에 표시\n (DOM 요소 텍스트 확인)  \n2. 페이지 URL 변경 없음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 필드에 empty_password_user 입력  \n2. 이메일 필드에 empty_password@example.com 입력  \n3. 'Sign up' 버튼 클릭  \n4. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"password can't be blank\"\" 에러 메시지가 비밀번호 필드 근처 또는 공통 에러 영역에 표시 (DOM 요소 텍스트 확인)  \n2. 페이지 URL 변경 없음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 필드에 invalid_email_user1 입력  \n2. 이메일 필드에 test@ 입력  \n3. 비밀번호 필드에 P@sswOrd123! 입력  \n4. 'Sign up' 버튼 클릭  5. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"email is invalid\"\" (또는 유사한, 실제 메시지 확인) 에러 메시지가 이메일 필드 근처 또는 공통 에러 영역에 표시 \n(DOM 요소 텍스트 확인)  \n2. 페이지 URL 변경 없음\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속  2. 사전에 가입된 이메일: existing_user@example.com\"\n\n재현 절차:\n1. 사용자명 필드에 duplicate_email_user 입력 \n2. 이메일 필드에 existing_user@example.com 입력  \n3. 비밀번호 필드에 P@sswOrd123! 입력  \n4. 'Sign up' 버튼 클릭  \n5. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"email has already been taken\"\" 에러 메시지가 이메일 필드 근처 또는 공통 에러 영역에 표시\n (DOM 요소 텍스트 확인, 실제 메시지 확인)  \n2. 페이지 URL 변경 없음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속  2. 사전에 가입된 사용자명: existing_username\"\n\n재현 절차:\n1. 사용자명 필드에 existing_username 입력  \n2. 이메일 필드에 duplicate_username@example.com 입력  \n3. 비밀번호 필드에 P@sswOrd123! 입력 \n4. 'Sign up' 버튼 클릭  \n5. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"username has already been taken\"\" 에러 메시지가 사용자명 필드 근처 또는 공통 에러 영역에 표시 \n(DOM 요소 텍스트 확인, 실제 메시지 확인)  \n2. 페이지 URL 변경 없음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 필드에 short_pass_user 입력  \n2. 이메일 필드에 short_pass@example.com 입력  \n3. 비밀번호 필드에 short 입력 (5자)  \n4. 'Sign up' 버튼 클릭  \n5. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"password is too short (minimum is 6 characters)\"\" \n(또는 유사한, 실제 정책 및 메시지 확인) 에러 메시지 표시 (DOM 요소 텍스트 확인)  \n2. 페이지 URL 변경 없음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속  \n2. XSS 테스트용 이메일: xss_signup@example.com\"\n\n재현 절차:\n1. 사용자명 필드에 <script>alert('XSS_Signup')</script> 입력  \n2. 이메일 필드에 xss_signup@example.com 입력  \n3. 비밀번호 필드에 P@sswOrd123! 입력  \n4. 'Sign up' 버튼 클릭 (정상 가입 가정)  \n5. 로그인 후, 프로필 페이지 또는 네비게이션 바에서 사용자명 확인\"\n기대 결과:\n1. 회원가입 과정 및 이후 페이지에서 alert('XSS_Signup') 자바스크립트 경고창이 실행되지 않음  \n2. (가입 성공 시) 네비게이션 바 또는 프로필 페이지에 사용자명이 &lt;script&gt;alert('XSS_Signup')&lt;/script&gt;와 같이 HTML 이스케이프되어 표시됨 (DOM 요소 innerHTML 또는 textContent 확인)\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속  \n2. 테스트용 고유 이메일: doubleclick_signup@example.com  \n3. 테스트용 고유 사용자명: doubleclick_user\"\n\n재현 절차:\n1. 사용자명 필드에 doubleclick_user 입력  \n2. 이메일 필드에 doubleclick_signup@example.com 입력  \n3. 비밀번호 필드에 P@sswOrd123! 입력  \n4. 'Sign up' 버튼을 짧은 간격으로 2회 빠르게 클릭\n(Selenium doubleClick() 또는 연속 click() 사용)  \n5. 네트워크 요청 모니터링 또는 최종 사용자 생성 수 확인 \n(백엔드 로그 또는 DB 확인 필요 시 연동)\"\n기대 결과:\n1. 첫 번째 클릭 후 'Sign up' 버튼이 비활성화되거나 로딩 상태로 변경되어 두 번째 클릭이 무시됨 \n(버튼 disabled 속성 또는 클래스 변화 확인)  \n2. 단 하나의 사용자 계정만 생성됨\n(API 요청이 1번만 발생했는지 확인, 또는 가입 후 동일 정보로 로그인 시도 시 1개의 계정만 존재)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 로그인 페이지 (/login) 접속  \n2. 사전에 가입된 사용자 계정: \n이메일 registered_user_login@example.com,\n 비밀번호 P@sswOrd123!\"\n\n재현 절차:\n1. 이메일 필드에 registered_user_login@example.com 입력  \n2. 비밀번호 필드에 P@sswOrd123! 입력  \n3. 'Sign in' 버튼 클릭  \n4. localStorage 확인: jwt 토큰  \n5. DOM 변화 확인: 네비게이션 바, URL\"\n기대 결과:\n1. 홈 페이지 (/)로 리디렉션 (URL 확인: BASE_URL/)  \n2. 네비게이션 바에 사용자명 표시 \n(예: registered_user_login의 사용자명)  \n3. localStorage.getItem('jwt')를 통해 토큰 값이 존재하며, 유효한 형식인지 확인\n(예: string, not null or undefined) 확인\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 로그인 페이지 (/login) 접속  \n2. 사전에 가입된 사용자 계정: 이메일 registered_user_login@example.com\"\n\n재현 절차:\n1. 이메일 필드에 registered_user_login@example.com 입력  \n2. 비밀번호 필드에 WrongP@sswOrd! 입력 \n3. 'Sign in' 버튼 클릭  \n4. DOM 변화 확인: 에러 메시지 영역\"\n기대 결과:\n1. \"\"email or password is invalid\"\" \n(또는 유사한, 실제 메시지 확인) 에러 메시지 표시 \n(DOM 요소 텍스트 확인) \n2. 페이지 URL 변경 없음  \n3. localStorage.getItem('jwt')에 토큰이 저장되지 않음\n (또는 이전 값 유지, 새 토큰으로 덮어쓰지 않음)\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 registered_user_login@example.com으로 성공적으로 로그인한 상태  \n2. localStorage에 jwt 토큰이 저장되어 있음\"\n\n재현 절차:\n1. 브라우저 새로고침 실행 ( driver.navigate().refresh() )  \n2. localStorage 확인: jwt 토큰  \n3. DOM 변화 확인: 네비게이션 바\"\n기대 결과:\n1. 로그인 상태 유지 (네비게이션 바에 사용자명 계속 표시) \n2. localStorage.getItem('jwt')를 통해 토큰 값이 여전히 존재함\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 registered_user_login@example.com으로 성공적으로 로그인한 상태 (/ 페이지) \n2. localStorage에 jwt 토큰이 저장되어 있음\"\n\n재현 절차:\n1. 네비게이션 바에서 \"\"Settings\"\" 링크 클릭하여 /settings 페이지로 이동  \n2. 네비게이션 바에서 \"\"Home\"\" 링크 클릭하여 / 페이지로 복귀  \n3. localStorage 확인: jwt 토큰  \n4. DOM 변화 확인: 네비게이션 바\"\n기대 결과:\n1. 모든 페이지 이동 후에도 로그인 상태 유지 (네비게이션 바에 사용자명 계속 표시)  \n2. localStorage.getItem('jwt')를 통해 토큰 값이 여전히 존재함\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 로그아웃된 상태  \n2. localStorage에 jwt 토큰 없음 또는 만료된 토큰\"\n\n재현 절차:\n1. 브라우저 주소창에 BASE_URL/editor 직접 입력 후 이동  \n2. URL 변화 확인\"\n기대 결과:\n1. 로그인 페이지 (/login)로 리디렉션 \n(URL 확인: BASE_URL/login) \n2. /editor 페이지의 내용이 표시되지 않음\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 로그아웃된 상태  \n2. localStorage에 jwt 토큰 없음 또는 만료된 토큰\"\n\n재현 절차:\n1. 브라우저 주소창에 BASE_URL/settings 직접 입력 후 이동  \n2. URL 변화 확인\"\n기대 결과:\n1. 로그인 페이지 (/login)로 리디렉션 \n(URL 확인: BASE_URL/login)  \n2. /settings 페이지의 내용이 표시되지 않음\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 registered_user_login@example.com으로 성공적으로 로그인한 상태  \n2. localStorage에 유효한 jwt 토큰이 저장되어 있음\"\n\n재현 절차:\n1. 네비게이션 바의 'Logout' 버튼 클릭  \n2. localStorage 확인: jwt 토큰  \n3. DOM 변화 확인: 네비게이션 바, URL\"\n기대 결과:\n1. 홈 페이지 (/)로 리디렉션 \n(URL 확인: BASE_URL/)  \n2. 네비게이션 바에 \"\"Sign in\"\", \"\"Sign up\"\" 링크 표시, 사용자명 관련 링크 숨김  \n3. localStorage.getItem('jwt')를 통해 토큰이 삭제되었거나 null 또는 undefined인지 확인\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 registered_user_login@example.com으로 로그인 후 로그아웃 한 상태 \n2. 이전 방문 페이지: /settings\"\n\n재현 절차:\n1. 브라우저의 '뒤로 가기' 버튼 클릭 \n(또는 주소창에 BASE_URL/settings 직접 입력)  \n2. URL 변화 확인\"\n기대 결과:\n1. 로그인 페이지 (/login)로 리디렉션 (URL 확인: BASE_URL/login)  2. /settings 페이지의 내용이 표시되지 않음\"\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 로그인한 상태에서 JWT 토큰이 만료되도록 설정 (테스트를 위해 짧은 만료 시간 토큰 사용 또는 수동 만료 처리)  \n2. 현재 페이지: / (또는 인증이 필요한 페이지)\n\n재현 절차:\n1. 인증이 필요한 페이지로 이동 시도 (예: /settings) 또는 페이지 내에서 인증이 필요한 액션 수행 (예: 글 작성 버튼 클릭)  \n2. URL 변화 및 localStorage 토큰 확인\n기대 결과:\n1. 로그인 페이지 (/login)로 자동 리디렉션  \n2. \"세션이 만료되었습니다. 다시 로그인해주세요.\" 와 같은 사용자 안내 메시지 표시 \n(선택 사항, 실제 메시지 확인)  \n3. localStorage에서 만료된 토큰이 제거되거나, 유효하지 않음으로 처리됨\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 입력 필드의 placeholder 텍스트 확인  \n2. 이메일 입력 필드의 placeholder 텍스트 확인  \n3. 비밀번호 입력 필드의 placeholder 텍스트 확인\n기대 결과:\n1. 사용자명 필드 placeholder: \"Username\" \n(또는 실제 값 확인)  \n2. 이메일 필드 placeholder: \"Email\" \n(또는 실제 값 확인)  \n3. 비밀번호 필드 placeholder: \"Password\" \n(또는 실제 값 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 입력 필드와 연관된 label 텍스트 확인 (존재한다면)  \n2. 이메일 입력 필드와 연관된 label 텍스트 확인 (존재한다면)\n3. 비밀번호 입력 필드와 연관된 label 텍스트 확인 (존재한다면)\n기대 결과:\n1. 사용자명 필드 \nlabel: (실제 값 확인, 예: \"Username\")  \n2. 이메일 필드 label: \n(실제 값 확인, 예: \"Email\") \n 3. 비밀번호 필드 label: \n(실제 값 확인, 예: \"Password\")\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 (/register) 접속\n\n재현 절차:\n1. 사용자명 필드에 실제 정책상 최대 길이 + 1자 이상의 문자열 입력 \n(예: longusernameistoolongtest)  \n2. 유효한 이메일, 비밀번호 입력  \n3. 'Sign up' 버튼 클릭  \n4. DOM 변화 확인: 에러 메시지 영역\n기대 결과:\n1. \"username is too long (maximum is XX characters)\" \n(또는 유사한, 실제 정책에 따른 메시지 및 길이 확인) 에러 메시지 표시  \n2. 페이지 URL 변경 없음\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 로그인 페이지 (/login) 접속\n\n재현 절차:\n1. 이메일 입력 필드의 placeholder 텍스트 확인  \n2. 비밀번호 입력 필드의 placeholder 텍스트 확인\n기대 결과:\n1. 이메일 필드 placeholder: \"Email\" \n(또는 실제 값 확인)  \n2. 비밀번호 필드 placeholder: \"Password\" \n(또는 실제 값 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 로그인하여 설정 페이지 (/settings) 접속\n\n재현 절차:\n1. Bio 입력 필드의 placeholder 텍스트 확인  \n2. 기타 설정 페이지 내 다른 입력 필드의 placeholder/label 확인 \n(예: Image URL, Username, Email, New Password)\n기대 결과:\n1. Bio 필드 placeholder: \"Short bio about you\" \n(또는 실제 값 확인)  \n2. 각 필드에 적절한 placeholder 또는 label이 표시됨\n(실제 값 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 로그인하여 설정 페이지 (/settings) 접속\n\n재현 절차:\n1. Bio 필드에 실제 정책상 최대 길이 + 1자 이상의 문자열 입력  \n2. 'Update Settings' 버튼 클릭  \n3. DOM 변화 확인: 에러 메시지 영역\n기대 결과:\n1. \"bio is too long (maximum is XXX characters)\" \n(또는 유사한, 실제 정책에 따른 메시지 및 길이 확인) 에러 메시지 표시  \n2. Bio 필드 값은 변경되지 않거나, 최대 길이까지만 반영됨 \n(서버 정책 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 브라우저 창 A에서 사용자로 로그인 (user_multi_session@example.com)  \n2. 동일 브라우저에서 새 탭 B 또는 새 창 B를 열어 동일 사이트 접속\n\n재현 절차:\n1. 새 탭/창 B에서 네비게이션 바 확인\n기대 결과:\n1. 새 탭/창 B에서도 로그인 상태가 즉시 반영되어 사용자명(user_multi_session)이 표시됨 (localStorage 동기화 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 브라우저 창 A, B 모두 user_multi_session@example.com으로 로그인된 상태\n\n재현 절차:\n1. 브라우저 창 A에서 'Logout' 버튼 클릭  \n2. 브라우저 창 B로 전환하여 네비게이션 바 확인\n (새로고침 없이 즉시 또는 잠시 후)\n기대 결과:\n1. 브라우저 창 B에서도 로그아웃 상태가 반영되어 \"Sign in\", \"Sign up\" 링크가 표시됨 \n(localStorage 변경 감지 및 UI 업데이트 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 사용자가 로그인하여 설정 페이지 (/settings) 또는 프로필 페이지 접속 (UI에 탈퇴 기능이 있는 페이지)  \n2. 테스트용 계정: user_to_delete_ui@example.com\"\n\n재현 절차:\n1. (기능 존재 시) '계정 삭제' 또는 'Deactivate Account' 버튼 클릭  \n2. (필요시) 비밀번호 재입력 또는 확인 절차 수행  \n3. 최종 '탈퇴 확인' 버튼 클릭  4. DOM 변화 및 URL 확인\"\n기대 결과:\n1. \"계정이 성공적으로 삭제되었습니다.\" (또는 유사 메시지) 표시 후 홈 페이지 또는 로그인 페이지로 리디렉션 \n2. 네비게이션 바에서 사용자 관련 링크 사라지고 \"Sign in\", \"Sign up\" 표시  \n3. 탈퇴한 계정(user_to_delete_ui@example.com)으로 로그인 시도 시 실패\n (\"User not found\" 또는 유사 에러, 실제 메시지 확인)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 회원가입 페이지 또는 로그인 페이지 접속\n\n재현 절차:\n1. 유효한 정보 입력 후 'Sign up' 또는 'Sign in' 버튼 클릭  \n2. 네트워크 응답이 오기 전까지 버튼 또는 페이지의 변화 관찰 \n(Selenium으로 감지 가능한 로딩 요소, 예: 스피너, 버튼 disabled 상태)\n기대 결과:\n1. 버튼 클릭 직후 버튼이 비활성화되거나, 로딩 스피너 등 시각적 표시가 나타남  \n2. API 응답 후 로딩 인디케이터 사라짐\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n등록된 게시글이 존재하지 않는다.\n\n재현 절차:\n1. Popular Tags 섹션을 확인한다.\n기대 결과:\nPopular Tags 제목만 노출되고, 태그 목록은 노출되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n서로 다른 두 개 이상의 게시글에 동일한 태그가 등록되어 있다.\n\n재현 절차:\n1. Popular Tags 섹션을 확인한다.\n기대 결과:\n서로 다른 두 개 이상의 게시글에 등록된 해당 태그가 Popular Tags 목록에 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n서로 다른 두 개 이상의 게시글에 동일한 태그가 등록되어 있다.\n- 태그의 총 개수가 10개 이상이다.\n\n재현 절차:\n1. 서로 다른 두 개 이상의 게시글에 동일한 태그를 등록한다.\n기대 결과:\nPopular Tags 섹션에 최대 10개의 태그만 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n서로 다른 두 개 이상의 게시글에 동일한 20자 이상 문자열의 태그가 등록되어 있다.\n- 일이삼사오육칠팔구십일이삼사오육칠팔구십\n\n재현 절차:\n1. Popular Tags 섹션을 확인한다.\n기대 결과:\n긴 태그가 화면 레이아웃을 벗어나거나 다른 요소와 겹치지 않고 정상적으로 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\nPopular Tags 섹션에 태그가 존재한다.\n\n재현 절차:\n1. Popular Tags 섹션의 특정 태그를 클릭한다.\n기대 결과:\n클릭한 태그와 연관된 게시글 목록을 보여주는 페이지가 새 네비바로 열린다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다.\n\n재현 절차:\n1. \"Article Title\" 필드에 유효한 제목을 입력한다.\n- 제목\n2. \"What’s this article about?\" 필드에 유효한 설명을 입력한다.\n- 설명\n 3. \"Write your article (in markdown)\" 필드에 1자 이상의 유효한 본문 내용을 입력한다.\n- 내용\n4. \"Enter tags\" 필드에 유효한 태그를 입력하고 Enter 키를 누른다 \n- 태그\n5. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n게시글이 정상적으로 등록되고, 작성된 게시글 상세 페이지로 이동한다.        \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. 모든 필드를 비워둔다.\n2. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n에러 페이지로 이동되며 게시글은 등록되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"Article Title\" 필드를 비워둔다.\n2. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n에러 페이지로 이동되며 게시글은 등록되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"What’s this article about?\" 필드를 비워둔다.\n2. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n에러 페이지로 이동되며 게시글은 등록되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"Write your article (in markdown)\" 필드를 비워둔다.\n2. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n에러 페이지로 이동되며 게시글은 등록되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"Enter tags\" 필드를 비워둔다.\n2. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n에러 페이지로 이동되며 게시글은 등록되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 동일한 제목의 게시글이 이미 등록되어 있다.\n\n재현 절차:\n1. 게시글 작성 페이지로 이동한다.\n2. 이미 등록된 게시글과 정확히 동일한 제목으로 새로운 게시글을 작성 시도한다. \n3. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n동일한 제목으로는 게시글을 등록할 수 없다는 오류 메시지가 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"Article Title\" 필드에 유효한 제목을 입력한다.\n- 제목\n2. \"What’s this article about?\" 필드에 유효한 설명을 입력한다.\n- 설명\n 3. \"Write your article (in markdown)\" 필드에 1자 이상의 유효한 본문 내용을 입력한다.\n- # 제목, **굵게** \n4. \"Enter tags\" 필드에 유효한 태그를 입력하고 Enter 키를 누른다 \n- 태그\n5. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n입력한 마크다운 문법이 상세 페이지에서 정상적으로 렌더링 된다.\n- # 제목 \n- **굵게**\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"Enter tags\" 필드에 태그 내용을 입력한 후 Enter 키를 누르지 않고 [Publish Article] 버튼을 클릭한다.\n기대 결과:\n\"Enter tags\" 필드에 입력된 내용이 태그로 추가되지 않고 게시글이 등록된다.        \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. \"Enter tags\" 필드에 아무것도 입력하지 않고 Enter 키를 누른다. (여러 번 반복)\n2. [Publish Article] 버튼을 클릭한다.\n3. 등록된 게시글을 확인한다.\n기대 결과:\n빈 태그가 추가되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에서 여러 개의 태그를 입력한 상태이다.\n\n재현 절차:\n1. 입력된 여러 태그 중 특정 태그 옆의 삭제 버튼(또는 아이콘)을 클릭한다.\n2. 남아있는 태그 목록을 확인한다.\n기대 결과:\n클릭한 특정 태그만 삭제되고, 다른 태그들은 그대로 유지된다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. 여러 개의 동일한 태그를 입력한다.\n기대 결과:\n동일한 태그는 등록되지 않는다.\n- \"이미 등록된 태그입니다.\" 에러문구 노출\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 게시글 작성 페이지에 접근한다\n\n재현 절차:\n1. 각 필드에 공백 문자만 입력한다.\n2. [Publish Article] 버튼을 클릭한다.\n기대 결과:\n공백만으로는 등록 불가하다는 오류 메시지가 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n시스템에 등록된 게시글이 하나도 없다.\n\n재현 절차:\n1. Global Feed 페이지로 이동한다.\n기대 결과:\n\"No articles are here... yet.\" 문구가 노출된다. 게시글 목록은 노출되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n시스템에 등록된 게시글이 존재한다.\n\n재현 절차:\n1. Global Feed 페이지로 이동한다.\n기대 결과:\n등록된 게시글 목록이 노출된다. \n- 프로필 이미지\n- 타이틀\n- 서브타이틀\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있고, 해당 사용자가 작성한 게시글이 존재한다.\n\n재현 절차:\n1. Global Feed 페이지로 이동한다.\n2. 본인이 작성한 게시글이 목록에 노출되는지 확인한다.\n기대 결과:\n본인이 작성한 게시글이 Global Feed 목록에 정상적으로 노출된다.        \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n게시글 작성 시 서브타이틀(About)에 줄바꿈을 포함하여 등록한 게시글이 존재한다.\n\n재현 절차:\n1. Global Feed에서 해당 게시글 항목을 확인한다.\n기대 결과:\n서브타이틀에 포함된 줄바꿈이 피드 화면에서 정상적으로 적용되어 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\nGlobal Feed에 게시글이 노출되어 있다.\n\n재현 절차:\n1. 게시글 항목에 있는 좋아요(하트) 버튼을 클릭한다.\n2. 버튼 상태와 좋아요 수를 확인한다.\n3. 좋아요 버튼을 다시 클릭한다.\n4. 버튼 상태와 좋아요 수를 다시 확인한다.\n기대 결과:\n좋아요 버튼 클릭 시 상태(on/off)가 토글되며, 좋아요 수가 정상적으로 증감한다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n태그가 등록된 게시글이 Global Feed에 노출되어 있다.\n\n재현 절차:\n1. Global Feed에서 해당 게시글 항목을 확인한다.\n기대 결과:\n해당 게시글에 등록된 태그 목록이 정상적으로 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n20자 이상인 태그가 등록된 게시글이 Global Feed에 노출되어 있다.\n- 일이삼사오육칠팔구십일이삼사오육칠팔구십\n\n재현 절차:\n1. Global Feed에서 해당 게시글 항목을 확인한다.\n기대 결과:\n긴 태그가 화면 레이아웃을 벗어나거나 아래 항목을 침범하지 않고 정상적으로 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n시스템에 총 10개 초과의 게시글이 등록되어 있다.\n\n재현 절차:\n1. Global Feed 페이지로 이동한다.\n2. 1페이지에 노출되는 게시글의 개수를 확인한다.\n3. 페이지네이션(Pagination) 컨트롤(예: 페이지 번호, 다음/이전 버튼)이 있는지 확인한다.\n기대 결과:\n1페이지에 최대 10개의 게시글이 노출되고, 다음 페이지로 이동할 수 있는 페이지네이션 컨트롤이 존재한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 팔로우하는 사용자가 한 명도 없다.\n\n재현 절차:\n1. Your Feed 페이지로 이동한다.\n기대 결과:\n\"No articles are here... yet.\" 문구가 노출된다. 게시글 목록은 노출되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 팔로우하는 사용자는 있으나 팔로우하는 사용자들이 게시글을 하나도 작성하지 않았다.\n\n재현 절차:\n1. Your Feed 페이지로 이동한다.\n기대 결과:\n\"No articles are here... yet.\" 문구가 노출된다. 게시글 목록은 노출되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 게시글을 작성한 사용자를 팔로우하고 있다.\n\n재현 절차:\n1. Your Feed 페이지로 이동한다.\n기대 결과:\n팔로우하는 사용자들이 작성한 게시글 목록이 노출된다.\n- 타이틀\n- 서브타이틀\n- 좋아요 버튼\n- 태그\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\nYour Feed에 게시글이 노출되어 있다.\n\n재현 절차:\n1. 게시글 항목에 있는 좋아요(하트) 버튼을 클릭한다.\n2. 버튼 상태와 좋아요 수를 확인한다.\n3. 좋아요 버튼을 다시 클릭한다.\n4. 버튼 상태와 좋아요 수를 다시 확인한다.\n기대 결과:\n좋아요 버튼 클릭 시 상태(on/off)가 토글되며, 좋아요 수가 정상적으로 증감한다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n태그가 등록된 게시글이 Your Feed에 노출되어 있다.\n\n재현 절차:\n1. Your Feed에서 해당 게시글 항목을 확인한다.\n기대 결과:\n해당 게시글에 등록된 태그 목록이 정상적으로 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n20자 이상인 태그가 등록된 게시글이 Your Feed에 노출되어 있다.\n- 일이삼사오육칠팔구십일이삼사오육칠팔구십\n\n재현 절차:\n1. Your Feed에서 해당 게시글 항목을 확인한다.\n기대 결과:\n긴 태그가 화면 레이아웃을 벗어나거나 아래 항목을 침범하지 않고 정상적으로 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n팔로우하는 사용자들이 작성한 총 게시글 수가 10개를 초과한다.\n\n재현 절차:\n1. Global Feed 페이지로 이동한다.\n2. 1페이지에 노출되는 게시글의 개수를 확인한다.\n3. 페이지네이션(Pagination) 컨트롤(예: 페이지 번호, 다음/이전 버튼)이 있는지 확인한다.\n기대 결과:\n1페이지에 최대 10개의 게시글이 노출되고, 다음 페이지로 이동할 수 있는 페이지네이션 컨트롤이 존재한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\nGlobal Feed 또는 Your Feed에 게시글이 노출되어 있다.\n\n재현 절차:\n1. 피드에 노출된 게시글 항목에서 [Read more...] 또는 게시글 (제목/본문 영역)를 클릭한다.\n기대 결과:\n해당 게시글의 전체 내용이 표시되는 게시글 상세 페이지로 이동한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 본인이 작성한 게시글의 상세 페이지로 이동한다.\n\n재현 절차:\n1. 게시글 상세 페이지를 확인한다.\n기대 결과:\n[Edit Article] 및 [Delete Article] 버튼이 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자 A가 로그인 되어 있으며, 사용자 B가 작성한 게시글의 상세 페이지로 이동한다.\n\n재현 절차:\n1. 게시글 상세 페이지를 확인한다.\n기대 결과:\n[Edit Article] 및 [Delete Article] 버튼이 노출되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 본인이 작성한 게시글의 상세 페이지로 이동한다.\n\n재현 절차:\n1. [Edit Article] 버튼을 클릭한다.\n기대 결과:\n게시글 수정 페이지로 이동하며, 기존 게시글의 내용(제목, 설명, 본문, 태그)이 입력 필드에 채워져 있다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 본인이 작성한 게시글의 수정 페이지에 진입한 상태이다.\n\n재현 절차:\n1. 게시글 내용(제목, 설명, 본문, 태그 중 하나 이상)을 수정한다.\n2. [Publish Article] 버튼을 클릭한다.\n3. 수정된 게시글 상세 페이지로 이동한다.\n기대 결과:\n게시글 내용이 성공적으로 수정되고, 상세 페이지에 수정된 내용이 반영되어 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 본인이 작성한 게시글의 수정 페이지에 진입한 상태이다.\n\n재현 절차:\n1. 기존 게시글 내용 전부를 삭제한다.\n2. [Publish Article] 버튼을 클릭한다.\n3. 수정된 게시글 상세 페이지로 이동한다.\n기대 결과:\n게시글에 반영되지 않아 오류 메세지가 노출된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n사용자가 로그인 되어 있으며, 본인이 작성한 게시글의 상세 페이지로 이동한다.\n\n재현 절차:\n1. [Delete Article] 버튼을 클릭한다.\n기대 결과:\n게시글이 성공적으로 삭제되고 삭제된 게시글은 더 이상 노출되지 않는다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 홈페이지에 접속.\n\n재현 절차:\n1. 네비게이션바에서 'settings'를 클릭한다.\n기대 결과:\n설정 페이지 (/settings)에 성공적으로 접근한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지 (/settings)에 접근.\n\n재현 절차:\n1. 설정 페이지의 전체적인 레이아웃을 확인한다. \n기대 결과:\n- 페이지 제목 \"Your Settings\"가 표시된다.\n-  해당 입력 필드가 순서대로 올바르게 배치되어 있다.\n1. 프로필 이미지 URL\n2. 사용자 이름\n3. 상태 소개\n4. 이메일\n5. 새 비밀번호\n- 'Update Settings' 버튼과 'Or click here to logout.' 버튼이 하단에 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지 (/settings)에 접근.\n\n재현 절차:\n1. 각 입력 필드의 플레이스홀더 텍스트를 확인한다.\n기대 결과:\n- 'URL of profile picture' 필드에 적절한 플레이스홀더 (예: \"URL of profile picture\")가 표시된다.\n- 'Username' 필드에 적절한 플레이스홀더 (예: \"Username\")가 표시된다.\n- 'Short bio about you' 텍스트 영역에 적절한 플레이스홀더 (예: \"Short bio about you\")가 표시된다.\n- 'Email' 필드에 적절한 플레이스홀더 (예: \"Email\")가 표시된다.\n- 'New Password' 필드에 적절한 플레이스홀더 (예: \"New Password\")가 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지 (/settings)에 접근.\n\n재현 절차:\n1. 'Or click here to logout.' 버튼을 클릭한다.\n기대 결과:\n사용자는 로그아웃 처리되어 홈페이지로 리다이렉션된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n- currentUser에게 기존 프로필 이미지 URL이 설정되어 있음.\n\n재현 절차:\n1. 'URL of profile picture' 입력 필드의 기존 이미지 URL을 모두 삭제한다.\n2. 'Update Settings' 버튼을 클릭한다.\n3. 홈페이지로 리다이렉션 된다.\n4. 네비게이션 바의 프로필 이미지를 확인한다.\n기대 결과:\n프로필 이미지가 기본 이미지 아이콘으로 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'URL of profile picture' 입력 필드에 새로운 유효한 이미지 URL (예: https://picsum.photos/200)을 입력한다.\n2. 'Update Settings' 버튼을 클릭한다. \n3. 홈페이지로 리다이렉션 된다.\n4. 네비게이션 바의 프로필 이미지를 확인한다.\n기대 결과:\n프로필 이미지가 새롭게 입력한 URL의 이미지로 성공적으로 변경된다.  \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'URL of profile picture' 입력 필드에 새로운 유효한 이미지 URL (예: https://picsum.photos/200)을 입력한다.\n2. 'Update Settings' 버튼을 클릭한다. \n3. 홈페이지로 리다이렉션 된다.\n4. 네비게이션 바의 프로필 이미지를 확인한다.\n기대 결과:\n프로필 이미지가 기본 이미지 아이콘으로 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근. \n- currentUser에게 기존 닉네임이 설정되어 있음.\n\n재현 절차:\n1. 'Username' 입력 필드의 기존 닉네임을 모두 삭제한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n닉네임 필드가 비어있는 상태로 업데이트되지 않아야 한다.   \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n- 시스템에 existingUser라는 닉네임의 다른 사용자가 존재.\n\n재현 절차:\n1. 'Username' 입력 필드에 이미 시스템에 존재하는 다른 사용자의 닉네임 (existingUser)을 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n3. 오류 메시지 또는 UI 변화를 확인한다.\n기대 결과:\n\"Username has already been taken\" 또는 유사한 명확한 오류 메시지가 표시되어야 한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'Username' 입력 필드에 새롭고, 유효하며, 시스템에 존재하지 않는 닉네임 (예: validNewUser123)을 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n3. 홈페이지로 리다이렉션 된다.\n4. 네비게이션 바에서 변경된 닉네임을 확인한다.\n기대 결과:\n닉네임이 성공적으로 validNewUser123으로 변경된다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'Short bio about you' 텍스트 영역에 새로운 유효한 상태소개 (예: \"새로운 상태 메시지입니다.\")를 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n3. currentUser의 프로필 페이지 (/@currentUser.username)에서 변경된 상태소개를 확인한다.\n기대 결과:\n프로필 페이지에 변경된 상태소개 \"새로운 상태 메시지입니다.\"가 올바르게 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n- currentUser에게 기존 상태소개가 설정되어 있음.\n\n재현 절차:\n1. 'Short bio about you' 텍스트 영역의 기존 내용을 모두 삭제한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n3. currentUser의 프로필 페이지 (/@currentUser.username)에서 상태소개 영역을 확인한다.\n기대 결과:\n프로필 페이지에서 상태소개가 비어있는 것으로 표시되어야 한다.   \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'Short bio about you' 텍스트 영역에 여러 줄로 구성된 텍스트를 입력한다 (예: \"첫 번째 줄\\n두 번째 줄\").   \n2. 'Update Settings' 버튼을 클릭한다.   \n3. currentUser의 프로필 페이지 (/@currentUser.username)에서 상태소개 영역을 확인한다.\n기대 결과:\n프로필 페이지에서 입력한 줄바꿈이 적용되어 여러 줄로 표시되어야 한다.  \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'Email' 입력 필드에 @ 기호 없이 텍스트(예: testuser.example.com)를 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.\n기대 결과:\n\"이메일 주소에 '@'를 포함해 주세요. 'testuser.example.com'에 '@'가 없습니다.\" 오류 메시지가 표시되어야 한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'Email' 입력 필드에 한글 또는 허용되지 않는 특수문자가 포함된 이메일(예: 테스트!@example.com)을 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.\n기대 결과:\n\"'@' 앞 부분에 '테' 기호가 포함되면 안됩니다.\" 오류 메시지가 표시되어야 한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.   \n- currentUser에게 기존 이메일이 설정되어 있음.\n\n재현 절차:\n1. 'Email' 입력 필드의 기존 이메일을 모두 삭제한다.   \n2. 'Update Settings' 버튼을 클릭한다.\n기대 결과:\n이메일 필드가 비어있는 상태로 업데이트되지 않아야 한다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.   \n- 시스템에 existing@example.com이라는 이메일의 다른 사용자가 존재.\n\n재현 절차:\n1. 'Email' 입력 필드에 이미 시스템에 존재하는 다른 사용자의 이메일 (existing@example.com)을 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n\"Email has already been taken\" 또는 유사한 명확한 오류 메시지가 표시되어야 한다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'Email' 입력 필드에 새롭고, 유효하며, 시스템에 존재하지 않는 이메일 (예: newValidEmail@example.com)을 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n이메일이 성공적으로 newValidEmail@example.com으로 변경되어 홈페이지로 리다이렉션 된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n로그인된 사용자 (currentUser)가 현재 비밀번호 oldPassword로 로그인한 상태. 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'New Password' 입력 필드에 새로운 유효한 비밀번호 (예: newValidPassword123)를 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n비밀번호 변경이 성공적으로 처리되어 홈페이지로 리다이렉션 된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'New Password' 입력 필드를 비워둔다.   \n2. 'Update Settings' 버튼을 클릭한다.\n기대 결과:\n비밀번호가 빈 값으로 변경되지 않고 홈페이지로 리다이렉션 된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'New Password' 입력 필드에 새 비밀번호(맨 앞에 공백 한 칸 + \"testpassword\")를 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n\"비밀번호는 앞/뒤 공백을 포함할 수 없습니다.\"와 같은 오류메시지가 표시 되어야한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'New Password' 입력 필드에 새 비밀번호( \"testpassword + 뒤에 공백 한 칸\")를 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n\"비밀번호는 앞/뒤 공백을 포함할 수 없습니다.\"와 같은 오류메시지가 표시 되어야한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 설정 페이지(/settings)에 접근.\n\n재현 절차:\n1. 'New Password' 입력 필드에 새 비밀번호(\" \", 빈 문자열만 입력)를 입력한다.   \n2. 'Update Settings' 버튼을 클릭한다.   \n기대 결과:\n\"비밀번호는 공백을 포함할 수 없습니다.\"와 같은 오류메시지가 표시 되어야한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com” / PW “test1234”)\n3. [Global Feed 탭]에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a).\n2. 첫 번째 게시글 카드 클릭(div.article-preview:nth-of-type(1) a.preview-link) > 상세 페이지 이동.\n3. [댓글 입력란] 클릭(textarea.form-control[placeholder*=\"Write a comment\"]) 후 “테스트 댓글” 입력.\n4. [Post Comment 버튼] 클릭(button.btn-primary[type=\"submit\"]).\n기대 결과:\n1. 새 댓글 카드 div.card.comment-card:last-of-type div.card-text에 “테스트 댓글” 표시.\n2. 프로필 이미지(div.card.comment-card:last-of-type img.comment-author-img) 표시\n3. 닉네임 링크(div.card.comment-card:last-of-type a.comment-author) 표시\n4. 작성 날짜(div.card.comment-card:last-of-type span.date-posted) 표시\n5. 휴지통 아이콘(div.card.comment-card:last-of-type i.ion-trash-a) 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com”, PW “test1234”)\n3. Global Feed 탭에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a).\n2. 첫 번째 게시글 카드 클릭(div.article-preview:nth-of-type(1) a.preview-link) > 상세 페이지 이동.\n3. [댓글 입력란] 클릭(textarea.form-control[placeholder*=\"Write a comment\"]) 후 120자 이상 영문 문자열 입력 (“TEST”×30).\n4. [Post Comment 버튼] 클릭(button.btn-primary[type=\"submit\"]).\n기대 결과:\n1. 댓글 카드 너비가 댓글 리스트 컨테이너 너비보다 같거나 작음\n(div.card.comment-card:last-of-type <=  div.card.comment-card:last-of-typ)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com”, PW “test1234”)\n3. Global Feed 탭에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a).\n2. 첫 번째 게시글 카드 클릭(div.article-preview:nth-of-type(1) a.preview-link) > 상세 페이지 이동.\n3. [댓글 입력란] 클릭(textarea.form-control[placeholder*=\"Write a comment\"]) 후 120자 이상 특수문자 문자열 입력 (“!@#%”×30).\n4. [Post Comment 버튼] 클릭(button.btn-primary[type=\"submit\"]).\n기대 결과:\n1. 댓글 카드 너비가 댓글 리스트 컨테이너 너비보다 같거나 작음\n(div.card.comment-card:last-of-type <=  div.card.comment-card:last-of-typ)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com”, PW “test1234”)\n3. Global Feed 탭에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a).\n2. 첫 번째 게시글 카드 클릭(div.article-preview:nth-of-type(1) a.preview-link) > 상세 페이지 이동.\n3. [댓글 입력란] 클릭(textarea.form-control[placeholder*=\"Write a comment\"]) 후 120자 이상 숫자 문자열 입력 (“0123”×30).\n4. [Post Comment 버튼] 클릭(button.btn-primary[type=\"submit\"]).\n기대 결과:\n1. 댓글 카드 너비가 댓글 리스트 컨테이너 너비보다 같거나 작음\n(div.card.comment-card:last-of-type <=  div.card.comment-card:last-of-typ)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com” / PW “test1234”)\n3. [Global Feed 탭]에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a) > 첫 번째 게시글 카드 클릭(div.article-preview:nth-of-type(1) a.preview-link) > 상세 페이지 이동.\n2. [댓글 입력란]에 “첫 줄\\n둘째 줄” 입력(Enter로 줄바꿈).\n3. [Post Comment 버튼] 클릭.\n기대 결과:\n1. 새 댓글 카드 본문 div.card.comment-card:last-of-type div.card-text에 두 줄 개행 표시(<br> 태그 또는 두 블록 요소 확인).\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com” / PW “test1234”)\n3. [Global Feed 탭]에 게시글 ≥ 1 존재\n4. 대상 게시글에 본인 댓글 “삭제 대상” 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭 > 첫 번째 게시글 카드 클릭 > 상세 페이지 이동.\n2. “삭제 대상” 댓글 카드의 [휴지통 아이콘] 클릭(div.card:has-text(\"삭제 대상\") i.ion-trash-a).\n기대 결과:\n1. div.card.comment-card:has-text(\"삭제 대상\") 요소 개수 0 건.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com” / PW “test1234”)\n3. [Global Feed 탭]에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a) > 첫 번째 게시글 카드 클릭 > 상세 페이지 이동.\n2. [댓글 입력란] 빈 상태에서 [Post Comment 버튼] 클릭(button.btn-primary[type=\"submit\"]).\n기대 결과:\n1. 댓글 카드 총 개수(div.card.comment-card) 클릭 전후 동일.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태 (ID “test1@test.com” / PW “test1234”)\n3. [Global Feed 탭]에 게시글 ≥ 1 존재\n4. 대상 게시글에 기존 댓글 2 건 이상 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭 > 대상 게시글 카드 클릭 > 상세 페이지 이동.\n2. 기존 댓글 개수 N 저장: document.querySelectorAll(\"div.card.comment-card\").length.\n3. [댓글 입력란]에 “신규 댓글” 입력 > [Post Comment 버튼] 클릭.\n기대 결과:\n1. div.card.comment-card 개수가 N + 1로 증가.\n2. 마지막 댓글 카드 div.card.comment-card:last-of-type div.card-text에 “신규 댓글” 표시.\n3. 첫 번째 댓글 카드 div.card.comment-card:nth-of-type(1) div.card-text 텍스트가 변경되지 않음.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 비로그인 상태\n3. [Global Feed 탭]에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-of-type(2) a).\n2. 첫 번째 게시글 카드 클릭(div.article-preview:nth-of-type(1) a.preview-link) > 상세 페이지 이동.\n기대 결과:\n1. div.card p에 “Sign in or sign up to add comments on this article.” 문구 표시.\n2. textarea.form-control 및 button.btn-primary[type=\"submit\"] 요소 0 건.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [게시글 카드] 클릭(div.article-preview:nth-of-type(1))\n3. [Favorite 버튼] 클릭(button.btn-outline-primary)\n기대 결과:\n1. [Favorite 버튼] class가 btn-primary로 변경돼 초록 배경·흰색 하트 아이콘 표시\n2. 같은 카드의 [좋아요 수](span.counter)가 클릭 전보다 1 증가\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [게시글 카드] 클릭(div.article-preview:nth-of-type(1))\n3. [Favorite 버튼] 클릭(button.btn-outline-primary)\n4. [사용자 아이콘] 클릭(nav ul.navbar-nav li:last-child a)\n5. [My Profile 링크] 클릭\n6. [Favorited Articles 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n기대 결과:\n1. 즐겨찾기한 게시글 카드가 목록에 표시\n2. 카드의 [Favorite 버튼]이 btn-primary(초록 배경·흰색 하트) 상태\n3. 카드 내 좋아요 수가 정수 ≥ 1 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n3. [Favorited Articles 탭]에 게시글 ≥ 1 존재\n\n재현 절차:\n1. [Favorited Articles 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. 첫 번째 [Favorite 버튼] 클릭(button.btn-primary)\n3. 브라우저 새로고침(F5)\n기대 결과:\n1. 해제된 [Favorite 버튼] class가 btn-outline-primary로 변경돼 흰색 배경·초록 하트 표시\n2. 새로고침 후 해당 카드가 목록에서 사라짐(div.article-preview 검색 0 건)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [작성자 이름] 클릭(a.author) > 프로필 이동\n3. [Follow 버튼] 클릭(button.btn-outline-secondary)\n기대 결과:\n1. 버튼 텍스트가 “Unfollow 작성자명”으로 변경\n2. 버튼 class가 btn-secondary로 바뀌어 초록 배경 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [작성자 이름] 클릭(a.author) > 프로필 이동\n3. [Follow 버튼] 클릭(button.btn-outline-secondary)\n4. [로고] 클릭(a.navbar-brand) > 메인 페이지\n5. [Your Feed 탭] 클릭(nav.nav-pills li:nth-child(1) a)\n기대 결과:\n1. [Your Feed 탭]에 nav-link active 클래스 적용(활성화)\n2. 피드에 팔로우한 작성자의 게시글 카드가 1 건 이상 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [작성자 이름] 클릭(a.author) > 프로필 이동\n3. [Follow 버튼] 클릭(button.btn-outline-secondary)\n4. [Unfollow 버튼] 클릭(button.btn-secondary)\n기대 결과:\n1. 버튼 텍스트가 “Follow 작성자명”으로 변경\n2. 버튼 class가 btn-outline-secondary로 바뀌어 흰색 배경·회색 테두리 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 로그인 상태(ID :test1@test.com / PW :test1234)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [작성자 이름] 클릭(a.author) > 프로필 이동\n3. [Follow 버튼] 클릭 > [Unfollow 버튼] 클릭\n4. [로고] 클릭(a.navbar-brand) > 메인 페이지\n5. [Your Feed 탭] 클릭(nav.nav-pills li:nth-child(1) a)\n기대 결과:\n1. 언팔로우한 작성자의 게시글 카드가 표시되지 않음(username 텍스트 검색 0 건)\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 비로그인 상태(쿠키·세션 삭제)\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [게시글 카드] 클릭(div.article-preview:nth-of-type(1))\n3. [Favorite 버튼] 클릭(button.btn-outline-primary)\n기대 결과:\n1. 로그인 페이지로 이동(URL /login 확인)\n2. 로그인 폼의 [Email 입력 필드](input[type=\"email\"]) 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n1. 메인 페이지 진입\n2. 비로그인 상태\n\n재현 절차:\n1. [Global Feed 탭] 클릭(nav.nav-pills li:nth-child(2) a)\n2. [게시글 카드] 클릭(div.article-preview:nth-of-type(1))\n3. [작성자 이름] 클릭(a.author) > 프로필 이동\n4. [Follow 버튼] 클릭(button.btn-outline-secondary)\n기대 결과:\n1. 로그인 페이지로 이동(URL /login 확인)\n2. 로그인 폼의 [Email 입력 필드](input[type=\"email\"]) 표시\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 홈페이지에 접속.\n\n재현 절차:\n1. 네비게이션바에서 프로필 이미지 또는 닉네임(currentUser.username)을 클릭한다.\n기대 결과:\n자신의 프로필 페이지 (/@{currentUser.username})에 성공적으로 접근한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 currentUser가 자신의 프로필 페이지 (/@{currentUser.username})에 접근.\n\n재현 절차:\n1. 프로필 상단 영역 (배너 영역)의 사용자 정보를 확인한다.\n기대 결과:\n해당 UI 요소가 노출된다.\n- 사용자 프로필 이미지\n- 사용자 이름\n- 상태 소개 (bio)\n- 'Edit Profile Settings' 버튼\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 currentUser가 자신의 프로필 페이지 (/@{currentUser.username})에 접근.\n\n재현 절차:\n1. 'Edit Profile Settings' 버튼을 클릭한다.\n기대 결과:\n설정 페이지 (/settings)에 성공적으로 접근한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 currentUser가 자신의 프로필 페이지 (/@{currentUser.username})에 접근.\n\n재현 절차:\n1. 'My Articles' 탭이 기본 선택된 것을 확인한다.\n기대 결과:\nMy Articles'탭이 활성화되고,  'Favorited Articles' 탭은 비활성화된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 currentUser가 자신의 프로필 페이지 (/@{currentUser.username})에 접근.\n\n재현 절차:\n1. 'My Articles' 탭이 기본 선택된 것을 확인한다.\n2. 'Favorited Articles' 탭을 클릭한다.\n기대 결과:\n 'Favorited Articles' 탭이 활성화(스타일 변경)되고, 'My Articles'탭은 비활성화된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 작성한 게시글이 없는 상태.\n\n재현 절차:\n1. 프로필 페이지에서 'My Articles' 탭이 기본으로 선택되어 있는지 확인한다.   \n2. 게시글 목록 영역을 확인한다.\n기대 결과:\n게시글 목록 영역에 \"No articles are here... yet.\" 문구가 정확히 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 ' '좋아요''를 누른 게시글이 없는 상태.\n\n재현 절차:\n1. 프로필 페이지에서 'Favorited Articles' 탭을 클릭한다.   \n2. 게시글 목록 영역을 확인한다.\n기대 결과:\n게시글 목록 영역에 \"No articles are here... yet.\" 문구가 정확히 표시된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 작성한 게시글이 표시된 상태.\n\n재현 절차:\n1. 프로필 페이지에서 'My Articles' 탭이 기본으로 선택되어 있는지 확인한다.   \n2. 임의의 게시글을 확인한다.\n기대 결과:\n해당 UI 요소가 노출된다.\n- 프로필 이미지\n- 게시글 업로드 날짜(예: Thu May 08 2025)\n- 게시글 타이틀\n- 서브타이틀\n-  '좋아요'(아이콘 스타일, 카운트)\n- 태그\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가  '좋아요'한 게시글이 표시된 상태.\n\n재현 절차:\n1. 프로필 페이지에서 'Favorited Articles' 탭을 클릭한다.   \n2. 임의의 게시글을 확인한다.\n기대 결과:\n해당 UI 요소가 노출된다.\n- 프로필 이미지\n- 게시글 업로드 날짜(예: Thu May 08 2025)\n- 게시글 타이틀\n- 서브타이틀\n-  '좋아요'(UI가 활성화 상태)\n- 태그\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 작성한 게시글 중 태그 내용이 매우 긴 게시글 (예: longtagname-longtagname-longtagname)이 포함된 상태.\n\n재현 절차:\n1. 프로필 페이지 'My Articles' 탭에서 해당 게시글의 태그 표시 영역을 확인한다.\n기대 결과:\n긴 태그 내용이 표시될 때, 태그 영역이 다른 게시글 미리보기 항목의 레이아웃을 침범하거나 깨뜨리지 않고 적절히 처리되어야 한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가  '좋아요'한 게시글 중 태그 내용이 매우 긴 게시글 (예: longtagname-longtagname-longtagname)이 포함된 상태.\n\n재현 절차:\n1. 프로필 페이지 'Favorited Articles' 탭에서 해당 게시글의 태그 표시 영역을 확인한다.\n기대 결과:\n긴 태그 내용이 표시될 때, 태그 영역이 다른 게시글 미리보기 항목의 레이아웃을 침범하거나 깨뜨리지 않고 적절히 처리되어야 한다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근. \n- currentUser가 작성한 게시글이 표시된 상태.\n\n재현 절차:\n1. 목록에 있는 임의의 게시글을 클릭한다.\n기대 결과:\n해당 게시글의 상세 페이지 (/article/{slug})로 올바르게 이동된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 1개 이상 10개 이하의 게시글을 작성한 상태. (예: 8개 게시글)\n\n재현 절차:\n1. 프로필 페이지에서 'My Articles' 탭의 게시글 목록을 확인한다. \n기대 결과:\n작성한 모든 게시글(8개)이 목록에 표시된다.   \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 10개를 초과하는 게시글을 작성한 상태.(예: 13개)\n\n재현 절차:\n1. 프로필 페이지에서 'My Articles' 탭의 게시글 목록을 확인한다.   \n2. 첫 페이지에 표시되는 게시글 수를 확인한다.   \n3. 페이지네이션 UI가 표시되는지 확인한다.   \n4. 페이지네이션 UI를 사용하여 '2'번 페이지로 이동한다.   \n5. 두 번째 페이지에 나머지 게시글이 올바르게 표시되는지 확인한다.\n기대 결과:\n- 첫 페이지에 설정된 페이지 크기(예: 10개)만큼의 게시글이 최신순으로 표시된다.   \n- 페이지네이션 UI가 올바르게 표시되어야 한다.   \n- 2번 페이지로 이동 시 나머지 게시글(예: 3개)이 올바르게 표시되어야 한다.   \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 작성한 게시글 (myArticle)이 목록에 표시된 상태.\n\n재현 절차:\n1. 'My Articles' 탭에 있는 myArticle의  '좋아요' 버튼 (현재 카운트: N)을 클릭한다.   \n2.  '좋아요' 버튼의 UI가 활성화 상태로 변경되고, 카운트가 N+1로 즉시 증가하는지 확인한다. \n기대 결과:\n '좋아요' 버튼 클릭 시 UI(아이콘 스타일, 카운트)가 즉각적으로 올바르게 토글된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 작성한 게시글 (myArticle)이 목록에 표시된 상태.\n-  '좋아요' 버튼의 UI가 활성화 상태.\n\n재현 절차:\n1. '좋아요' 버튼의 UI가 활성화 상태인지 확인한다.   \n2.  '좋아요' 버튼을 클릭한다.   \n3.  '좋아요' 버튼의 UI가 비활성화 상태로 변경되고, 카운트가 N-1로 즉시 감소하는지 확인한다.\n기대 결과:\n '좋아요' 버튼 클릭 시 UI(아이콘 스타일, 카운트)가 즉각적으로 올바르게 토글된다.\n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser). \n- 다른 사용자 (otherUser)가 작성한 게시글 (articleByOther)이 존재.\n\n재현 절차:\n1. currentUser로 로그인한 상태에서 Global Feed 목록에서 임의의 게시글의  '좋아요' 버튼을 클릭한다.   \n2. currentUser의 프로필 페이지 (/@currentUser.username)로 이동한 후 'Favorited Articles' 탭을 클릭한다.   \n3. articleByOther가 목록에 표시되는지 확인한다.   \n기대 결과:\n '좋아요'한 articleByOther가 'Favorited Articles' 탭 목록에 표시되어야 한다.  \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser).   currentUser가 이전에 다른 사용자의 게시글 (favoritedArticle)을  '좋아요' 해둔 상태. \n- favoritedArticle이 'Favorited Articles' 탭 목록에 표시됨.\n\n재현 절차:\n1. currentUser의 프로필 페이지 'Favorited Articles' 탭에서 favoritedArticle의  '좋아요' 버튼을 클릭하여  '좋아요'를 해제한다.   \n2. 페이지를 새로고침한 후 favoritedArticle이 목록에서 사라졌는지 확인한다.\n기대 결과:\n-  '좋아요' 해제한 favoritedArticle이 'Favorited Articles' 탭 목록에서 제거되어야 한다.   \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 1개 이상 10개 이하의 게시글을  '좋아요' 한 상태. (예: 8개)\n\n재현 절차:\n1. 프로필 페이지에서 'Favorited Articles' 탭의 게시글 목록을 확인한다. \n기대 결과:\n좋아요'한 모든 게시글(8개)이 목록에 표시된다. \n"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": [
+      {
+        "type": "text",
+        "text": "\n테스트 ID: unnamed\n시나리오: \n\n사전 조건:\n- 로그인된 사용자 (currentUser)가 자신의 프로필 페이지 (/@currentUser.username)에 접근.   \n- currentUser가 10개를 초과하는 게시글을  '좋아요' 한 상태. (예: 13개)\n\n재현 절차:\n1. 프로필 페이지에서 'Favorited Articles' 탭의 게시글 목록을 확인한다.   \n2. 첫 페이지에 표시되는 게시글 수를 확인한다.   \n3. 페이지네이션 UI가 표시되는지 확인한다.   \n4. 페이지네이션 UI를 사용하여 '2'번 페이지로 이동한다.   \n5. 두 번째 페이지에 나머지  '좋아요'한 게시글이 올바르게 표시되는지 확인한다.\n기대 결과:\n- 첫 페이지에 설정된 페이지 크기(예: 10개)만큼의  '좋아요'한 게시글이 표시된다.   \n- 페이지네이션 UI가 올바르게 표시되어야 한다.   \n- 2번 페이지로 이동 시 나머지 게시글(예: 3개)이 올바르게 표시되어야 한다.   \n"
+      }
+    ]
+  }
+]

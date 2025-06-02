@@ -1,0 +1,31 @@
+{
+  "environment": {
+    "uid": "44041402-6bd6d700-396d-4360-9bb9-b7c8117aebcc",
+    "id": "6bd6d700-396d-4360-9bb9-b7c8117aebcc",
+    "name": "RealWorld-Environment",
+    "owner": "44041402",
+    "createdAt": "2025-05-15T02:17:54.000Z",
+    "updatedAt": "2025-05-15T02:17:54.000Z",
+    "values": [
+      {
+        "key": "baseUrl",
+        "value": "http://localhost:3000/api",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "token",
+        "value": "",
+        "type": "default",
+        "enabled": true
+      },
+      {
+        "key": "commentId",
+        "value": "",
+        "type": "default",
+        "enabled": true
+      }
+    ],
+    "isPublic": false
+  }
+}

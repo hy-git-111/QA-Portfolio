@@ -1,0 +1,168 @@
+[
+  {
+    "successSignup": 
+    {
+      "userName": "auto_signup_ok_user",
+      "email": "auto_signup_ok@example.com",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "noUserNameSignup": 
+    {
+      "userName": "",
+      "email": "empty_username@example.com",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "noEmailSignup": 
+    {
+      "userName": "empty_email_user",
+      "email": "",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "noPasswordSignup": 
+    {
+      "userName": "empty_password_user",
+      "email": "",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "invalidEmailSignin": 
+    {
+      "userName": "invalid_email_user1",
+      "email": "test@",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "duplicateEmailSignup": 
+    {
+      "userName": "duplicate_email_user",
+      "email": "1@1",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "existingUsernameSignup": 
+    {
+      "userName": "1",
+      "email": "duplicate_username@example.com",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "shortPwSignup": 
+    {
+      "userName": "short_pass_user",
+      "email": "short_pass@example.com",
+      "password": "short"
+    }
+  },
+  {
+    "longUsernameSignup": 
+    {
+      "userName": "longusernameistoolongtest",
+      "email": "1@1",
+      "password": "1"
+    }
+  },
+  {
+    "xssSignup": 
+    {
+      "userName": "<script>alert('XSS_Signup')</script>",
+      "email": "xss_signup@example.com",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "doubleClickSignin": 
+    {
+      "userName": "doubleclick_user",
+      "email": "doubleclick_signup@example.com",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "successLogin": 
+    {
+      "userName": "3",
+      "email": "3@3",
+      "password": "3"
+    }
+  },
+  {
+    "wrongPwLogin": 
+    {
+      "userName": "1",
+      "email": "1@1",
+      "password": "P@sswOrd123!"
+    }
+  },
+  {
+    "fullDataUser": 
+    {
+      "userName": "1",
+      "email": "1@1",
+      "password": "1"
+    }
+  },
+  {
+    "belowTenArticlesUser": 
+    {
+      "userName": "2",
+      "email": "2@2",
+      "password": "2"
+    }
+  },
+  {
+    "belowTenArticlesUser2": 
+    {
+      "userName": "5",
+      "email": "5@5",
+      "password": "5"
+    }
+  },
+  {
+    "bioLongText": "Python이란 무엇인가요?\nPhython은 웹 애플리케이션, 소프트웨어 개발, 데이터 과학, 기계 학습(ML)에 널리 사용되는 프로그래밍 언어입니다. 개발자는 Python이 효율적이고 배우기 쉬우며 여러 플랫폼에서 실행될 수 있으므로 Python을 사용합니다. Phython 소프트웨어는 무료로 다운로드할 수 있고, 모든 유형의 시스템과 원활하게 통합되며, 개발 속도를 증가시킵니다.\n\nPython을 사용하면 어떤 이점이 있나요?\nPython의 이점은 다음과 같습니다.\n\nPython 프로그램은 기본적이고 영어와 유사한 구문을 가지고 "
+  }, 
+  {
+    "longEnComment": "TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest"
+  },
+  {
+    "longSpecialCharComment": "!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%!@#%"
+  },
+  {
+    "longNumComment": "012301230123012301230123012301230123012301230123012301230123012301230123012301230123012301230123012301230123012301230123"
+  },
+  {
+    "newLinetext": "첫 줄\n둘째 줄"
+  },
+  {
+    "deleteComment": "삭제 대상"
+  },
+  {
+    "addComment": 
+    [
+      "신규 댓글1",
+      "신규 댓글2"
+    ]
+  },
+  {
+    "validUsernameUpdate": "validUsernameUpdate"
+  },
+  {
+    "shortNewBio": "새로운 상태 메시지입니다."
+  },
+  {
+    "noAtMarkEmail": "testuser.example.com"
+  },
+  {
+    "includeNotAllowedCharEmail": "testuser.example.com"
+  }
+]
+  
