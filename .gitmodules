@@ -1,9 +1,9 @@
 [submodule "learning"]
 	path = learning
 	url = https://github.com/hy-git-111/LearningNotes
-[submodule "projects/1st_project"]
+[submodule "projects/1st_project_ai-menu-recommendation"]
 	path = projects/1st_project_ai-menu-recommendation
 	url = https://github.com/hy-git-111/eliceproject_qa04.git
-[submodule "projects/2nd_project"]
+[submodule "projects/2nd_project_realworld"]
 	path = projects/2nd_project_realworld
 	url = https://github.com/hy-git-111/eliceproject_qa_team03.git
