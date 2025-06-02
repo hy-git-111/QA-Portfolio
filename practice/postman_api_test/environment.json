@@ -1,0 +1,15 @@
+{
+	"id": "058fba19-668c-488a-a131-7ead4efaf118",
+	"name": "사용자 등록_env",
+	"values": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8090",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-04-16T12:59:26.568Z",
+	"_postman_exported_using": "Postman/11.41.1"
+}
