@@ -15,12 +15,12 @@
 * 대상 URL : http://localhost:5000/api/v1/users/register
   
 ## 테스트 설계 및 구현
-* 테스트 데이터 : [data.json](https://github.com/hy-git-111/Quality-Assurance/blob/main/practice_postman/data.json)
-* [API 명세](https://github.com/hy-git-111/Quality-Assurance/blob/main/practice_postman/API%20%EB%AA%85%EC%84%B8.pdf)
-* [Test Case](https://github.com/hy-git-111/Quality-Assurance/blob/main/practice_postman/Test%20Case.pdf)
+* 테스트 데이터 : [data.json](https://github.com/hy-git-111/Quality-Assurance/blob/main/postman_api_test/data.json)
+* [API 명세](https://github.com/hy-git-111/Quality-Assurance/blob/main/postman_api_test/API%20%EB%AA%85%EC%84%B8.pdf)
+* [Test Case](https://github.com/hy-git-111/Quality-Assurance/blob/main/postman_api_test/Test%20Case.pdf)
 * Postman 테스트 파일
-  * Collection 파일: [Collection.json](https://github.com/hy-git-111/Quality-Assurance/blob/main/practice_postman/collection.json)
-  * 환경설정 파일 : [environment.json](https://github.com/hy-git-111/Quality-Assurance/blob/main/practice_postman/environment.json)
+  * Collection 파일: [Collection.json](https://github.com/hy-git-111/Quality-Assurance/blob/main/postman_api_test/collection.json)
+  * 환경설정 파일 : [environment.json](https://github.com/hy-git-111/Quality-Assurance/blob/main/postman_api_test/environment.json)
 
 ## 테스트 결과 확인 및 분석
 * Test Result 요약
@@ -44,4 +44,4 @@
     - 예외처리를 통해 서버 안정성 확보 필요
     - 관련 Test Case : TC-015
 
-* 전체 리포트 : [report.pdf](https://github.com/hy-git-111/Quality-Assurance/blob/main/practice_postman/report.pdf)
+* 전체 리포트 : [report.pdf](https://github.com/hy-git-111/Quality-Assurance/blob/main/postman_api_test/report.pdf)
