@@ -75,11 +75,11 @@ POM 구조로 pytest 스크립트를 작성하여 사용자 시나리오 기반�
 프로젝트와 학습 내용은 앞으로도 확장될 예정입니다.
 
 ### 개념 정리
-* [QA](./learning/qa) - QA 이론, JMeter, DevTools 등  
-* [Python](./learning/python) - SDLC, 단위테스트, Python 기반 UI 자동화 관련 개념  
-* [Javascript](./learning/javascript) - JavaScript 기초 문법 및 UI 자동화 응용  
-* [Web](./learning/web) - 웹 동작 원리  
-* [DB](./learning/db) - 관계형 데이터베이스 이론  
+* [QA](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/qa) - QA 이론, JMeter, DevTools 등  
+* [Python](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/python) - SDLC, 단위테스트, Python 기반 UI 자동화 관련 개념  
+* [Javascript](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/javascript) - JavaScript 기초 문법 및 UI 자동화 응용  
+* [Web](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/web) - 웹 동작 원리  
+* [DB](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/db) - 관계형 데이터베이스 이론  
 
 <span style="color:gray">**> 'LearningNotes'저장소에 서브모듈로 연결되어 있습니다.**</span>
 
