@@ -81,8 +81,6 @@ POM 구조로 pytest 스크립트를 작성하여 사용자 시나리오 기반�
 * [Web](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/web) - 웹 동작 원리  
 * [DB](https://github.com/hy-git-111/LearningNotes/tree/a78377c34e48443a60ab36374a565abf00cd040c/db) - 관계형 데이터베이스 이론  
 
-<span style="color:gray">**> 'LearningNotes'저장소에 서브모듈로 연결되어 있습니다.**</span>
-
 ### 실습 기록
 - [Postman & Newman 사용자 등록 API 테스트](./practice/postman_api_test)
 - [JMeter 부하 테스트 실습](./practice/jmeter_load_tests)
